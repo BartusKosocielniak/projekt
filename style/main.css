@@ -242,9 +242,6 @@ main > .item {
 	border: 2px solid black;
 }
 
-.content2, .content3 >img{
-	height:98%;
-}
 .content1 {
 	grid-row: 1/2;
 	grid-column: 1/7;
