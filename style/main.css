@@ -1,0 +1,320 @@
+*
+/* ,
+*::after,
+*::before */ {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+}
+
+body {
+	background-image: url(../img/bialaprzesten.png);
+	/* background-position: center; */
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Kanit', sans-serif;
+	font-family: 'Nerko One', cursive;
+	font-family: 'Quicksand', sans-serif;
+	/* background-color: #333; */
+	font-size: 20px;
+	min-width: 960px;
+}
+a svg path {
+	/* color: red; */
+	text-decoration: none;
+}
+a {
+	color: red;
+	text-decoration: none;
+}
+button {
+	background-color: #ffffff;
+	border: none;
+	cursor: pointer;
+}
+form {
+	position: relative;
+}
+
+.wrapper {
+	margin: auto;
+	width: 960px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 520px 700px 140px;
+	gap: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	display: grid;
+	grid-row: 1/2;
+	grid-column: 1/-1;
+	/* background: #111; */
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 120px 60px 300px;
+	gap: 20px;
+}
+.head {
+	/* position: fixed;
+    top: 0;
+    margin: 0 auto; */
+	border: 2px solid black;
+	grid-row: 1/2;
+	grid-column: 1/-1;
+	position: relative;
+	background-color: #7da7d9;
+}
+.logo {
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	/* background-color: #333; */
+	top: 20px;
+	padding: 0;
+	margin: 0;
+}
+.logo a img {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+.SpecialOfert {
+	position: absolute;
+	width: 540px;
+	height: 40px;
+	background-color: #8393ca;
+	left: 170px;
+	border: 2px solid black;
+	border-top: none;
+}
+.SpecialOfert strong p {
+	font-weight: bolder;
+	font-size: 25px;
+	color: #111;
+}
+.LoginSearch {
+	position: absolute;
+	width: 220px;
+	height: 40px;
+	background-color: #2e3192;
+	right: 0%;
+	bottom: 0px;
+	border-top: 3px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 3px solid black;
+}
+.LoginSearch a {
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	top: 0px;
+	width: 110px;
+	height: 20px;
+	color: #fff;
+	background: #000;
+}
+.search {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45%;
+}
+.inputSearch {
+	position: absolute;
+	border: transparent;
+	width: 180px;
+	/* height: 19px; */
+	background: #ffffff;
+	height: 20px;
+	text-indent: 10px;
+	bottom: 0;
+	left: 20px;
+	color: #000;
+}
+.btn {
+	position: absolute;
+	right: 30px;
+}
+.fa-magnifying-glass {
+	color: #000;
+}
+
+.FirstContact {
+	position: absolute;
+	display: block;
+	width: 220px;
+	height: 40px;
+	background-color: #2e3192;
+	right: 0%;
+	top: 20px;
+	border-top: 3px solid black;
+	border-right: 1px solid black;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+}
+.FirstContact p {
+	font-size: 14px;
+}
+
+.menu {
+	display: grid;
+	grid-row: 2/3;
+	grid-column: 1/-1;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 60px;
+	background-color: black;
+	text-transform: uppercase;
+}
+.menu > .item {
+	margin: 10px;
+	background-color: #fff;
+	height: 40px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+.menu > .item:hover {
+	margin: 5px;
+	background-color: #585858;
+	box-shadow: 0 0 5px #585858;
+	height: 50px;
+	border-radius: 10px;
+	transition: 0.1s;
+}
+.menu > .item:active {
+	margin: 5px;
+	background-color: #585888;
+	box-shadow: 0 0 5px #585888;
+	height: 50px;
+	border-radius: 10px;
+	transition: 0.1s;
+}
+.menu > .item a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	color: black;
+}
+.categories {
+	grid-column: 2/4;
+}
+.PriceList {
+	grid-column: 6/8;
+}
+.SecondContact {
+	grid-column: 10/12;
+}
+.slider {
+	grid-row: 3/4;
+	grid-column: 1/-1;
+	position: relative;
+}
+
+
+main {
+	display: grid;
+	grid-row: 2/3;
+	grid-column: 1/-1;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 200px 200px 160px 60px;
+	gap: 20px;
+}
+main p {
+	font-size: 18px;
+}
+main > .item {
+	background-color: #6dcff6;
+	border: 2px solid black;
+}
+.content1 {
+	grid-row: 1/2;
+	grid-column: 1/7;
+	padding: 5px;
+}
+.content2 {
+	grid-row: 1/2;
+	grid-column: 7/-1;
+}
+.content3 {
+	grid-row: 2/3;
+	grid-column: 1/7;
+}
+.content4 {
+	grid-row: 2/3;
+	grid-column: 7/-1;
+	padding: 5px;
+}
+.content5 {
+	display: block;
+	grid-row: 3/4;
+	grid-column: 1/-1;
+}
+.content5 h3 {
+	text-align: center;
+}
+.content5 ul {
+	padding-left: 30px;
+}
+.content6 {
+	padding: 10px;
+	grid-row: 4/5;
+	grid-column: 1/-1;
+}
+
+footer {
+	display: grid;
+	grid-row: 3/4;
+	grid-column: 1/-1;
+	background: #7da7d9;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100px;
+	gap: 20px;
+	padding-top: 20px;
+	border: 2px solid black;
+}
+.adres {
+	display: block;
+	grid-row: 1/2;
+	grid-column: 2/5;
+}
+.adres, .hour p {
+	font-size: 16px;
+}
+.hour {
+	display: block;
+	grid-row: 1/2;
+	grid-column: 5/8;
+}
+.social {
+	grid-row: 1/2;
+	grid-column: 8/11;
+}
+
+
+.facebook:hover > a svg path{
+    color: black;
+    /* background: #000; */
+}
+.tiktok:hover > a svg path{
+    color: black;
+    /* background: #000; */
+}
+.instagram:hover > a svg path{
+    color: black;
+    /* background: #000; */
+}
